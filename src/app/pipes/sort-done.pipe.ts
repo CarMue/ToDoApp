@@ -25,7 +25,6 @@ export class SortDonePipe implements PipeTransform {
   // transform(value: any, args?: any): any {
   //   value.sort((a: any, b: any) => {
   //     return (a.done === true && b.done === false) ? 1 : -1;
-      
   //   });
   //   return value;
   // }

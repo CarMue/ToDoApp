@@ -20,7 +20,7 @@ export class ToDoDataService {
 
   toggleToDo(toDo: ToDo) {
     toDo.done = !toDo.done;
-    this.toDos = this.toDos.filter(t => t == t);
+    this.toDos = this.toDos.filter(t => t === t);
   }
 
 }

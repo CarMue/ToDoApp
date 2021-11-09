@@ -7,7 +7,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr class="table-primary" *ngFor="let t of toDos | sortDone: toDo" (click)=toggle(t) [class.toDoDone] = "t.done">
+    <tr class="table-primary" *ngFor="let t of toDos | sortDone: toDo" [class.toDoDone]="t.done" (click)="toggle(t)">
       <td>{{t.description}}</td>
       <td>{{t.deadline}}</td>
     </tr>

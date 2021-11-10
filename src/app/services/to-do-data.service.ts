@@ -23,4 +23,14 @@ export class ToDoDataService {
     this.toDos = this.toDos.filter(t => t === t);
   }
 
+  countToDosUndone(): number {
+    let numberUndone: number = 0;
+    for (let i: number = 0; i < this.toDos.length; i++) {
+      if(this.toDos[i].done === false) {
+        numberUndone++;
+      }
+    }
+    return numberUndone;
+  }
+
 }

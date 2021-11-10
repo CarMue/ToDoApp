@@ -12,12 +12,12 @@ export class ToDoFormComponent implements OnInit {
   toDo: ToDo;
   
   constructor(private toDoDataService: ToDoDataService) {
-    this.toDo = new ToDo(null, null, null);
+    this.toDo = new ToDo(null, false, null);
   }
 
   save() {
     this.toDoDataService.saveToDo(this.toDo);
-    this.toDo = new ToDo(null, null, null);
+    this.toDo = new ToDo(null, false, null);
   }
 
   ngOnInit() {

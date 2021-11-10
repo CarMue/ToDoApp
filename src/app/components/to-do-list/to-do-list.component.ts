@@ -23,6 +23,10 @@ export class ToDoListComponent implements OnInit {
     this.toDoDataService.toggleToDo(toDo);
   }
 
+  countUndone(): number {
+    return this.toDoDataService.countToDosUndone();
+  }
+
   ngOnInit() {
   }
 
